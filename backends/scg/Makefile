@@ -4,7 +4,7 @@ LDFLAGS = -L/usr/X11R6/lib
 LDLIBS = -lX11 -lXrandr
 
 build:
-	$(CC) $(CFLAGS) $(LDFLAGS) $(LDLIBS) -o scg scg.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o scg scg.c $(LDLIBS)
 
 clean:
 	rm -f scg
